@@ -1,0 +1,349 @@
+.header {
+  background: #1d1d1d;
+  color: white;
+  padding: 43px 0px 43px 0px;
+}
+
+.header__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__routermini {
+  display: none;
+}
+
+.header-img svg {
+  max-width: 219px;
+  height: 76px;
+}
+
+.header-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 0 0 -80px;
+}
+
+.header-contact__p {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.01em;
+  color: #e4e4e4;
+}
+
+.header-cart {
+  position: relative;
+  cursor: pointer;
+  margin: 0 0 0 45px;
+}
+
+.header-cart svg {
+  width: 39px;
+}
+
+.header-cart__index {
+  position: absolute;
+  top: 0px;
+  right: -5px;
+  width: 15px;
+  height: 15px;
+  background: #fff;
+  color: black;
+}
+
+.header-cart__index p {
+  padding: 2px 0px 0px 0px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 12px;
+  /* identical to box height */
+  letter-spacing: 0.02em;
+  color: #000000;
+}
+
+.header-item__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 0px -77px 0px 0px;
+}
+
+.header-item__li {
+  margin: 0px 77px 0px 0px;
+}
+
+.header-item__a {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  color: #e4e4e4;
+}
+
+.header-item__a:hover {
+  color: #ffffff;
+}
+
+.router-link-active {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.burger {
+  display: none;
+}
+
+@media (max-width: 1440px) {
+  .container {
+    max-width: 915px !important;
+  }
+  .header-img svg {
+    width: 171px;
+    height: 59px;
+  }
+  .header-item__item {
+    margin: 0px 0px -43px 0px;
+  }
+  .header-item__li {
+    margin: 0px 43px 43px 0px;
+  }
+  .header-item__a {
+    font-size: 14px;
+  }
+  .header-contact__p {
+    font-size: 15px;
+  }
+  .header-cart {
+    margin: 0 0 0 14px;
+  }
+  .header-cart svg {
+    width: 31px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .header {
+    background: #1d1d1d;
+    color: white;
+    padding: 11px 0px 8px 0px;
+  }
+  .header__routerbig {
+    display: none;
+  }
+  .header__routermini {
+    display: block;
+  }
+  .header-cart {
+    margin: 0px 20px 0px 0px;
+  }
+  .header-cart svg {
+    width: 47px;
+    height: 42px;
+  }
+  .header-contact__p {
+    display: none;
+  }
+  .header-item {
+    display: none;
+  }
+  .header-img {
+    display: none;
+  }
+  .header-img__mini {
+    display: block;
+  }
+  .header-img__mini svg {
+    max-width: 219px;
+    height: 46px;
+  }
+  .menu {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: auto;
+    background: #1d1d1d;
+    color: white;
+    z-index: 10;
+    padding: 67px 0 20px 0;
+    -webkit-transform: translate3d(0px, 0px, 0px);
+            transform: translate3d(0px, 0px, 0px);
+    -webkit-animation: 0s;
+            animation: 0s;
+  }
+  .menu li {
+    margin: 0px 0px 45px 0px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 125.4%;
+    text-align: center;
+    letter-spacing: 0.055em;
+    color: #ffffff;
+  }
+  .menu__routermini {
+    top: 11px;
+    left: 20px;
+    max-width: 150px;
+    height: 50px;
+    z-index: 20;
+    position: fixed;
+  }
+  .menu__mini {
+    display: block;
+  }
+  .menu__mini svg {
+    max-width: 219px;
+    height: 46px;
+  }
+  .menu a {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 125.4%;
+    text-align: center;
+    letter-spacing: 0.055em;
+    color: #ffffff;
+  }
+  .burger {
+    display: block;
+    cursor: pointer;
+    z-index: 20;
+  }
+  .burger__block {
+    display: block;
+  }
+  .burger__img {
+    width: 39px;
+    height: 39px;
+    z-index: 15;
+  }
+  .burger__img2 {
+    top: 15px;
+    right: 20px;
+    width: 34px;
+    z-index: 20;
+    position: fixed;
+  }
+  .logo {
+    display: none;
+  }
+  .logo-mini {
+    height: 100px;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .logo-mini img {
+    width: 120px;
+    height: 49px;
+  }
+  .menu-footer {
+    margin: 83px 0px 0px 0px;
+  }
+  .menu-footer__p {
+    margin: 0px 0px 12px 0px;
+  }
+  .menu-footer__p p {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #a9a9a9;
+  }
+  .menu-footer__mail p {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #a9a9a9;
+  }
+}
+
+@media (max-width: 500px) {
+  .header-img__mini svg {
+    width: 92px;
+    height: 32px;
+  }
+  .header-cart svg {
+    width: 17px;
+    height: 17px;
+  }
+  .header-cart__index {
+    top: 3px;
+    right: -1px;
+    width: 6px;
+    height: 7px;
+  }
+  .header-cart__index p {
+    font-size: 6px;
+    line-height: 4px;
+  }
+  .menu__routermini {
+    top: 11px;
+    left: 20px;
+  }
+  .menu li {
+    font-size: 18px;
+  }
+  .menu li a {
+    font-size: 18px;
+  }
+  .menu__mini svg {
+    width: 92px;
+    height: 32px;
+  }
+  .burger__img {
+    width: 17px;
+    height: 17px;
+  }
+  .burger__img2 {
+    top: 20px;
+    right: 22px;
+    width: 13px;
+    height: 13px;
+  }
+}

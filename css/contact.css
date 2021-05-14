@@ -1,0 +1,205 @@
+.contact {
+  background: #1d1d1d;
+  color: white;
+}
+
+.contact__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.contact__title {
+  display: none;
+}
+
+.contact__column {
+  padding: 43px 10px 100px 0px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 40%;
+          flex: 1 0 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.contact__column:last-child {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 60%;
+          flex: 1 0 60%;
+}
+
+.contact__text {
+  position: relative;
+}
+
+.contact__text svg {
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  top: 0px;
+  left: 0px;
+  height: 37px;
+}
+
+.contact__text-address {
+  position: relative;
+  margin: 0px 0px 35px 60px;
+  font-family: Raleway;
+  text-align: left;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 35px;
+  letter-spacing: 0.02em;
+  color: #e1e1e1;
+}
+
+.contact__text-phone {
+  position: relative;
+  margin: 0px 0px 35px 60px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 37px;
+  letter-spacing: 0.02em;
+  color: #e1e1e1;
+}
+
+.contact__text-email {
+  position: relative;
+  font-family: Raleway;
+  margin: 0px 0px 0px 60px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 35px;
+  letter-spacing: 0.02em;
+  color: #e1e1e1;
+}
+
+@media (max-width: 1440px) {
+  .contact__column {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+  .contact__column:first-child {
+    margin: 0px 42px 0px 0px;
+  }
+  .contact__column:last-child {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+    max-width: 552px;
+  }
+  .contact__text svg {
+    width: 23px;
+    height: 32px;
+  }
+  .contact__text-address {
+    font-size: 18px;
+    margin: 0px 0px 49px 55px;
+  }
+  .contact__text-phone {
+    font-size: 18px;
+    margin: 0px 0px 49px 55px;
+  }
+  .contact__text-email {
+    font-size: 18px;
+    margin: 0px 0px 49px 55px;
+  }
+  #map {
+    height: 442px !important;
+    padding: 8px !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  .contact__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact__column {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+    width: 100%;
+    padding: 36px 0px 0px 0px;
+  }
+  .contact__column:first-child {
+    margin: 0px;
+  }
+  .contact__column:last-child {
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 56px 0px;
+    max-width: 100%;
+    max-height: 287px;
+  }
+  .contact__text svg {
+    width: 15px;
+    height: 20px;
+  }
+  .contact__title {
+    display: block;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 125.4%;
+    text-align: center;
+    letter-spacing: 0.055em;
+    color: #eaeaea;
+  }
+  .contact__text-address {
+    line-height: 14px;
+    font-size: 14px;
+    margin: 0px 0px 22px 40px;
+  }
+  .contact__text-address::before {
+    width: 15px;
+    height: 21px;
+    left: -40px;
+  }
+  .contact__text-phone {
+    line-height: 14px;
+    font-size: 14px;
+    margin: 0px 0px 22px 40px;
+  }
+  .contact__text-phone::before {
+    width: 19px;
+    height: 20px;
+    left: -40px;
+  }
+  .contact__text-email {
+    line-height: 14px;
+    font-size: 14px;
+    margin: 0px 0px 22px 40px;
+  }
+  .contact__text-email::before {
+    width: 15px;
+    height: 16px;
+    left: -40px;
+  }
+  #map {
+    min-height: 100% !important;
+  }
+}

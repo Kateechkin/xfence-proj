@@ -1,0 +1,200 @@
+.contact {
+   background: #1d1d1d;
+   color: white;
+
+   &__row {
+      display: flex;
+      flex-direction: row;
+   }
+   &__title {
+      display: none;
+   }
+
+   &__column {
+      padding: 43px 10px 100px 0px;
+      flex: 1 0 40%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      &:last-child {
+         flex: 1 0 60%;
+      }
+   }
+
+   &__text {
+      position: relative;
+      svg {
+         position: absolute;
+         background-size: cover;
+         background-position: center;
+         background-repeat: no-repeat;
+         top: 0px;
+         left: 0px;
+         // width: 26px;
+         height: 37px;
+      }
+   }
+
+   &__text-address {
+      position: relative;
+      margin: 0px 0px 35px 60px;
+      font-family: Raleway;
+      text-align: left;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 30px;
+      line-height: 35px;
+      letter-spacing: 0.02em;
+      color: #e1e1e1;
+   }
+
+   &__text-phone {
+      position: relative;
+      margin: 0px 0px 35px 60px;
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 30px;
+      line-height: 37px;
+
+      letter-spacing: 0.02em;
+      color: #e1e1e1;
+   }
+
+   &__text-email {
+      position: relative;
+      font-family: Raleway;
+      margin: 0px 0px 0px 60px;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 30px;
+      line-height: 35px;
+      letter-spacing: 0.02em;
+      color: #e1e1e1;
+   }
+}
+@media (max-width: 1440px) {
+   .contact {
+      &__row {
+         // flex-direction: column;
+      }
+      &__column {
+         position: relative;
+         // flex: 100%;
+         width: 100%;
+         height: auto;
+         &:first-child {
+            margin: 0px 42px 0px 0px;
+         }
+         &:last-child {
+            flex: 100%;
+            max-width: 552px;
+         }
+      }
+      &__text {
+         svg {
+            width: 23px;
+            height: 32px;
+         }
+      }
+      &__text-address {
+         font-size: 18px;
+         margin: 0px 0px 49px 55px;
+      }
+      &__text-phone {
+         font-size: 18px;
+         margin: 0px 0px 49px 55px;
+      }
+      &__text-email {
+         font-size: 18px;
+         margin: 0px 0px 49px 55px;
+      }
+   }
+   .container {
+      // padding: 0px !important;
+   }
+   #map {
+      img {
+         height: auto !important;
+         // height: 442px !important;
+      }
+
+      padding: 8px !important;
+      // height: auto !important;
+   }
+}
+@media (max-width: 1024px) {
+   .contact {
+      &__row {
+         flex-direction: column;
+      }
+      &__column {
+         flex: 100%;
+         width: 100%;
+         padding: 36px 0px 0px 0px;
+         &:first-child {
+            margin: 0px;
+         }
+         &:last-child {
+            // max-height: 600px;
+            padding: 0px 0px 0px 0px;
+            margin: 0px 0px 56px 0px;
+            max-width: 100%;
+            // max-height: 287px;
+         }
+      }
+      &__text {
+         svg {
+            width: 15px;
+            height: 20px;
+         }
+      }
+      &__title {
+         display: block;
+         font-family: Raleway;
+         font-style: normal;
+         font-weight: 500;
+         font-size: 18px;
+         line-height: 125.4%;
+         text-align: center;
+         letter-spacing: 0.055em;
+         color: #eaeaea;
+      }
+      &__text-address {
+         line-height: 14px;
+         font-size: 14px;
+         margin: 0px 0px 22px 40px;
+         &::before {
+            width: 15px;
+            height: 21px;
+            left: -40px;
+         }
+      }
+      &__text-phone {
+         line-height: 14px;
+         font-size: 14px;
+         margin: 0px 0px 22px 40px;
+         &::before {
+            width: 19px;
+            height: 20px;
+            left: -40px;
+         }
+      }
+      &__text-email {
+         line-height: 14px;
+         font-size: 14px;
+         margin: 0px 0px 22px 40px;
+         &::before {
+            width: 15px;
+            height: 16px;
+            left: -40px;
+         }
+      }
+   }
+   #map {
+      img {
+         min-height: 100% !important;
+      }
+   }
+}
